@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alarmas.com - Términos Google</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cactus-classical-serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="wake-up-image">
+            <img src="images/wake-up.png" alt="Wake Up Alarm" loading="lazy">
+        </div>
+        <div class="login-container">
+            <div class="logo">
+                <span class="material-icons">smartphone</span>
+            </div>
+            <h1>Bienvenido a<br>alarmas.com</h1>
+            
+            <form id="loginForm" novalidate>
+                <div class="input-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" required autocomplete="username">
+                    <span class="error-message" id="usuarioError">El usuario es obligatorio</span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required autocomplete="current-password">
+                    <span class="error-message" id="contrasenaError">La contraseña es obligatoria</span>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="secondary">Crear Usuario</button>
+                    <button type="submit" class="primary">Inicia sesión</button>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-button google" aria-label="Iniciar sesión con Google">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M21.35 11.1h-9.17v2.73h6.51c-.33 3.81-3.5 5.44-6.5 5.44C8.36 19.27 5 16.25 5 12c0-4.1 3.2-7.27 7.2-7.27c3.09 0 4.9 1.97 4.9 1.97L19 4.72S16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12c0 5.05 4.13 10 10.22 10c5.35 0 9.25-3.67 9.25-9.09c0-1.15-.15-1.81-.15-1.81Z"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="social-button apple" aria-label="Iniciar sesión con Apple">
+                        <span class="material-icons">apple</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="overlay active">
+        <div class="terms-popup">
+            <div class="terms-header">
+                <div class="terms-title">
+                    <div class="google-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="74" height="24" viewBox="0 0 74 24">
+                            <path fill="#4285F4" d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24z"/>
+                            <path fill="#EA4335" d="M25 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"/>
+                            <path fill="#34A853" d="M53.58 7.49h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5z"/>
+                            <path fill="#FBBC05" d="M38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52z"/>
+                            <path fill="#EA4335" d="M58 .24h2.51v17.57H58z"/>
+                            <path fill="#34A853" d="M68.26 15.52c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z"/>
+                        </svg>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="terms-content">
+                <h1>Terminos y condiciones para el ingreso con Google</h1>
+                
+                <p class="terms-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                <div class="terms-actions">
+                    <a href="login.html" class="terms-button secondary no-button">NO</a>
+                    <a href="bienvenidos.html" class="terms-button primary si-button">SI</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script>
+        document.querySelector('.terms-button.primary').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html> 
